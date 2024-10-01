@@ -178,7 +178,7 @@ achievements.forEach(achievement => {
 const stats = [
     { name: 'Total Victories', value: 370000 },
     { name: 'Win Rate', value: '85%' },
-    { name: 'Average Score (monthly)', value: 50000 },
+    { name: 'Average Score (monthly)', value: 12000 },
     { name: 'Total Members', value: 3300 },
     { name: 'Global Ranking', value: '#1' }
 ];
@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
-    // ... (keep your existing code here)
+
 
     const discordButton = document.querySelector('button[data-text="Contact"]');
     const discordPrompt = document.getElementById('discord-prompt');
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
-    // ... (keep your existing code here)
+  
 
     const achievementsButton = document.getElementById('achievements-button');
     const achievementsSection = document.getElementById('achievements');
@@ -316,5 +316,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ... (keep the rest of your existing code here)
+   
 });
