@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OG-Original Gangsters | Territorial.io Clan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div id="entry-animation"></div>
+    <div id="background-animation"></div>
+    <header>
+        <h1>OG-Original Gangsters</h1>
+        <nav>
+            <button class="animated-button" data-text="Home">Home</button>
+            <button class="animated-button" data-text="About" id="about-button">About</button>
+            <button class="animated-button" data-text="Achievements" id="achievements-button">Achievements</button>
+            <button class="animated-button" data-text="Contact">Discord</button>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Welcome to the OG | Original Gangster's Website</h2>
+            <p>Dominating Territorial.io with style and strategy</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are the OG players of Territorial.io, known for our unmatched skills and teamwork. Our clan was founded in 2022 and has quickly risen to the top of the leaderboards.</p>
+        </section>
+        <section id="members">
+            <h2>Our Members</h2>
+            <div id="member-cards"></div>
+        </section>
+        <section id="achievements">
+            <h2>Clan Achievements</h2>
+            <ul id="achievement-list"></ul>
+        </section>
+        <section id="stats">
+            <h2>Clan Statistics</h2>
+            <div id="stat-cards"></div>
+        </section>
+    </main>
+
+    <!-- New clan details section -->
+    <div id="clan-details" style="display: none;">
+        <h2 class="fade-in">About OG-Original Gangsters</h2>
+        <div class="content-block fade-in">
+            <h3>Our History</h3>
+            <p>Founded in December 29, 2021 by Craggy, Maya, Messiah Israel and Dr. Pi. OG Clan quickly rose to prominence in Territorial.io. Our founders, seasoned players with a vision, united to set new standards in strategic gameplay and teamwork.</p>
+        </div>
+        <div class="content-block fade-in">
+            <h3>Making of OG</h3>
+            <p>OG was created by a merger of two clans, ACM and GS, accompanied by RIM.</p>
+            <ul>
+                <li>In late December of 2021, These clans realized that there wasnt much they could do to beat ELITE and GRAVE. So they decided to merge. So OG is created!</li>
+                <li>OG couldnt pass ELITE and GRAVE at first, but they were in top 5 clans already!</li>
+            </ul>
+        </div>
+        <div class="content-block fade-in">
+            <h3>Our Achievements</h3>
+            <ul>
+                <li>Top 10 global ranking within 3 months</li>
+                <li>Undefeated in clan wars for 6 consecutive months</li>
+                <li>Record holders for largest territory captured</li>
+                <li>Multiple members in top 50 individual rankings</li>
+            </ul>
+        </div>
+        <div class="content-block fade-in">
+            <h3>Our Values</h3>
+            <p>At OG-Original Gangsters, we champion:</p>
+            <ul>
+                <li>Strategic thinking and adaptability</li>
+                <li>Teamwork and communication</li>
+                <li>Continuous improvement</li>
+                <li>Respect for players and opponents</li>
+            </ul>
+        </div>
+        <p class="fade-in">Join us in our quest for Territorial.io dominance!</p>
+        <button id="home-button" class="animated-button">Home</button>     
+    </div>
+    <div id="discord-prompt" class="custom-prompt" style="display: none;">
+        <p>You're about to join the OG-Original Gangsters Discord server. Are you ready to connect with the best Territorial.io players?</p>
+        <button id="confirm-discord" class="animated-button">Yes, let's go!</button>
+        <button id="cancel-discord" class="animated-button">Maybe later</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
