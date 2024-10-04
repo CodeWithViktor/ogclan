@@ -138,11 +138,10 @@ buttons.forEach(button => {
 
 // Member Cards
 const members = [
-    { name: 'Elections-today', rank: 'Fleet Admiral', score: 10000 },
-    { name: 'Villor', rank: 'Co-Leader', score: 914667 },
-    { name: 'Elections-today', rank: 'Co-Leader', score: 9000 },
-    { name: 'Elections-today', rank: 'Grand Admiral', score: 8500 },
-    { name: 'Elections-today', rank: 'Admiral', score: 8000 },
+    { name: 'Yamac', rank: 'Fleet Admiral', score: 100000 },
+    { name: 'Kush', rank: 'Grand Admiral', score: 914667 },
+    { name: 'Kees', rank: 'Co-Leader', score: 80000 },
+    { name: 'Villor', rank: 'Co-Leader', score: 70100 },
 ];
 
 const memberCards = document.getElementById('member-cards');
@@ -178,7 +177,7 @@ achievements.forEach(achievement => {
 const stats = [
     { name: 'Total Victories', value: 370000 },
     { name: 'Win Rate', value: '85%' },
-    { name: 'Average Score (monthly)', value: 12000 },
+    { name: 'Average Score (monthly)', value: 50000 },
     { name: 'Total Members', value: 3300 },
     { name: 'Global Ranking', value: '#1' }
 ];
@@ -282,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
-
+    // ... (keep your existing code here)
 
     const discordButton = document.querySelector('button[data-text="Contact"]');
     const discordPrompt = document.getElementById('discord-prompt');
@@ -303,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
-  
+    // ... (keep your existing code here)
 
     const achievementsButton = document.getElementById('achievements-button');
     const achievementsSection = document.getElementById('achievements');
@@ -316,5 +315,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-   
+    // ... (keep the rest of your existing code here)
 });
