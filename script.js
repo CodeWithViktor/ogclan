@@ -138,10 +138,10 @@ buttons.forEach(button => {
 
 // Member Cards
 const members = [
-    { name: 'Yamac', rank: 'Fleet Admiral', score: 100000 },
-    { name: 'Kush', rank: 'Grand Admiral', score: 914667 },
-    { name: 'Kees', rank: 'Co-Leader', score: 80000 },
-    { name: 'Villor', rank: 'Co-Leader', score: 70100 },
+    { name: 'Yamac', rank: 'Fleet Admiral'},
+    { name: 'Kush', rank: 'Grand Admiral'},
+    { name: 'Kees', rank: 'Co-Leader'},
+    { name: 'Villor', rank: 'Co-Leader'},
 ];
 
 const memberCards = document.getElementById('member-cards');
@@ -152,7 +152,6 @@ members.forEach(member => {
     card.innerHTML = `
         <h3>${member.name}</h3>
         <p>Rank: ${member.rank}</p>
-        <p>Score: ${member.score}</p>
     `;
     memberCards.appendChild(card);
 });
@@ -181,6 +180,14 @@ const stats = [
     { name: 'Total Members', value: 3300 },
     { name: 'Global Ranking', value: '#1' }
 ];
+
+stats.forEach(stat => {
+    if (typeof stat.value === 'number') {
+        stat.value = stat.value.toLocaleString();
+    }
+});
+
+console.log(stats);
 
 const statCards = document.getElementById('stat-cards');
 
@@ -248,19 +255,18 @@ document.addEventListener('DOMContentLoaded', () => {
         // Hide clan details
         clanDetails.style.display = 'none';
 
-        // Show all previously hidden elements
+        //
         elementsToHide.forEach(element => {
             element.style.display = '';
             element.classList.remove('exit-animation');
         });
 
-        // Reset fade elements
+        // 
         fadeElements.forEach(el => {
             el.classList.remove('active');
         });
     });
 
-    // Add animation to all buttons with the 'animated-button' class
     const animatedButtons = document.querySelectorAll('.animated-button');
     animatedButtons.forEach(button => {
         button.addEventListener('mouseenter', () => {
@@ -281,7 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
-    // ... (keep your existing code here)
 
     const discordButton = document.querySelector('button[data-text="Contact"]');
     const discordPrompt = document.getElementById('discord-prompt');
@@ -302,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
-    // ... (keep your existing code here)
+   
 
     const achievementsButton = document.getElementById('achievements-button');
     const achievementsSection = document.getElementById('achievements');
@@ -315,5 +320,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ... (keep the rest of your existing code here)
 });
